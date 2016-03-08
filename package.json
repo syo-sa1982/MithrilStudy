@@ -1,15 +1,27 @@
 {
-  "name": "name",
+  "name": "mithrilstudy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "mithril": "^0.2.3"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.12.1"
   },
-  "author": "syo-sa1982",
-  "license": "MIT"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syo-sa1982/MithrilStudy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syo-sa1982/MithrilStudy/issues"
+  },
+  "homepage": "https://github.com/syo-sa1982/MithrilStudy#readme"
 }
