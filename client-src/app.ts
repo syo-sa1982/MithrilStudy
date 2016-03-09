@@ -2,13 +2,14 @@
 import MithrilProperty = _mithril.MithrilProperty;
 import MithrilVirtualElement = _mithril.MithrilVirtualElement;
 import MithrilController = _mithril.MithrilController;
+import MithrilBasicProperty = _mithril.MithrilBasicProperty;
 
 /**
  * Model
  */
 class Todo {
   description: MithrilProperty<string>;
-  done: MithrilProperty<boolean>;
+  done: MithrilBasicProperty<boolean>;
 
   constructor(description: string) {
     this.description = m.prop<string>(description);
@@ -20,7 +21,7 @@ class Todo {
 // 作成が可能かどうかを判定するロジックや、
 // Todoが追加された後にテキスト入力をクリアする責務を持つ
 namespace todoVM {
-  export var description: MithrilProperty<string>;
+  export var description: MithrilBasicProperty<string>;
   export var todoList: MithrilProperty<Todo[]>;
   // export var done: MithrilProperty<boolean>;
   /**
